@@ -4653,9 +4653,8 @@ definitions:
   LocalNodeState:
     description: Current local status of this node.
     type: string
-    default: ''
+    default: pending
     enum:
-      - ''
       - inactive
       - pending
       - active

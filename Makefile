@@ -13,6 +13,10 @@ test-short:
 build:
 	$(GO) build $(PKGS)
 
+swagger:
+	go get -u github.com/go-swagger/go-swagger/cmd/swagger
+	swagger generate client -f swaggers/api133.yaml -A accepta
+
 run:
 	$(GO) run *.go
 

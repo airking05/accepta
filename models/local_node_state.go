@@ -20,9 +20,6 @@ type LocalNodeState string
 
 const (
 
-	// LocalNodeState captures enum value ""
-	LocalNodeState LocalNodeState = ""
-
 	// LocalNodeStateInactive captures enum value "inactive"
 	LocalNodeStateInactive LocalNodeState = "inactive"
 
@@ -44,7 +41,7 @@ var localNodeStateEnum []interface{}
 
 func init() {
 	var res []LocalNodeState
-	if err := json.Unmarshal([]byte(`["","inactive","pending","active","error","locked"]`), &res); err != nil {
+	if err := json.Unmarshal([]byte(`["inactive","pending","active","error","locked"]`), &res); err != nil {
 		panic(err)
 	}
 	for _, v := range res {
