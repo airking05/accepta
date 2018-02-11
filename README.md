@@ -20,8 +20,9 @@ go get github.com/airking05/go-docker-api
 package main
 
 import (
-	"github.com/airking05/accepta"
-	"github.com/airking05/accepta/client/container"
+	"github.com/airking05/go-docker-api-client"
+	"github.com/airking05/go-docker-api-client/client/container"
+	"context"
 	"fmt"
 	)
 
@@ -39,11 +40,6 @@ func main() {
    	    fmt.Println(c.ID)
 		fmt.Println(c.Status)
 		fmt.Println(c.Command)
-    }
+    }}
     
-```
-```Go
-```
-
-```Go
 ```
