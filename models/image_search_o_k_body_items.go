@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// ImageSearchOKBodyItems image search o k body items
+// ImageSearchOKBodyItems ImageSearchResponseItem
 // swagger:model imageSearchOKBodyItems
 type ImageSearchOKBodyItems struct {
 

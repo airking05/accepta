@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// VolumePruneOKBody volume prune o k body
+// VolumePruneOKBody VolumePruneResponse
 // swagger:model volumePruneOKBody
 type VolumePruneOKBody struct {
 

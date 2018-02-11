@@ -12,12 +12,18 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// ExecInspectOKBody exec inspect o k body
+// ExecInspectOKBody ExecInspectResponse
 // swagger:model execInspectOKBody
 type ExecInspectOKBody struct {
 
+	// can remove
+	CanRemove bool `json:"CanRemove,omitempty"`
+
 	// container ID
 	ContainerID string `json:"ContainerID,omitempty"`
+
+	// detach keys
+	DetachKeys string `json:"DetachKeys,omitempty"`
 
 	// exit code
 	ExitCode int64 `json:"ExitCode,omitempty"`

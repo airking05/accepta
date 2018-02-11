@@ -13,9 +13,14 @@ import (
 	"github.com/go-openapi/validate"
 )
 
-// ContainerWaitOKBody container wait o k body
+// ContainerWaitOKBody ContainerWaitResponse
+//
+// OK response to ContainerWait operation
 // swagger:model containerWaitOKBody
 type ContainerWaitOKBody struct {
+
+	// error
+	Error *ContainerWaitOKBodyError `json:"Error,omitempty"`
 
 	// Exit code of the container
 	// Required: true
@@ -26,6 +31,11 @@ type ContainerWaitOKBody struct {
 func (m *ContainerWaitOKBody) Validate(formats strfmt.Registry) error {
 	var res []error
 
+	if err := m.validateError(formats); err != nil {
+		// prop
+		res = append(res, err)
+	}
+
 	if err := m.validateStatusCode(formats); err != nil {
 		// prop
 		res = append(res, err)
@@ -34,6 +44,26 @@ func (m *ContainerWaitOKBody) Validate(formats strfmt.Registry) error {
 	if len(res) > 0 {
 		return errors.CompositeValidationError(res...)
 	}
+	return nil
+}
+
+func (m *ContainerWaitOKBody) validateError(formats strfmt.Registry) error {
+
+	if swag.IsZero(m.Error) { // not required
+		return nil
+	}
+
+	if m.Error != nil {
+
+		if err := m.Error.Validate(formats); err != nil {
+			if ve, ok := err.(*errors.Validation); ok {
+				return ve.ValidateName("Error")
+			}
+			return err
+		}
+
+	}
+
 	return nil
 }
 

@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// NetworkCreateCreatedBody network create created body
+// NetworkCreateCreatedBody NetworkCreateResponse
 // swagger:model networkCreateCreatedBody
 type NetworkCreateCreatedBody struct {
 

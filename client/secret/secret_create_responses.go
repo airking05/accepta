@@ -68,7 +68,7 @@ func NewSecretCreateCreated() *SecretCreateCreated {
 no error
 */
 type SecretCreateCreated struct {
-	Payload *models.SecretCreateCreatedBody
+	Payload *models.IDResponse
 }
 
 func (o *SecretCreateCreated) Error() string {
@@ -77,7 +77,7 @@ func (o *SecretCreateCreated) Error() string {
 
 func (o *SecretCreateCreated) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
 
-	o.Payload = new(models.SecretCreateCreatedBody)
+	o.Payload = new(models.IDResponse)
 
 	// response payload
 	if err := consumer.Consume(response.Body(), o.Payload); err != nil && err != io.EOF {

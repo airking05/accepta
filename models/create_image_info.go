@@ -19,6 +19,9 @@ type CreateImageInfo struct {
 	// error
 	Error string `json:"error,omitempty"`
 
+	// id
+	ID string `json:"id,omitempty"`
+
 	// progress
 	Progress string `json:"progress,omitempty"`
 

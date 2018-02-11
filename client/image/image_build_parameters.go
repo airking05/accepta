@@ -28,6 +28,7 @@ func NewImageBuildParams() *ImageBuildParams {
 		dockerfileDefault  = string("Dockerfile")
 		forcermDefault     = bool(false)
 		nocacheDefault     = bool(false)
+		platformDefault    = string("")
 		qDefault           = bool(false)
 		rmDefault          = bool(true)
 	)
@@ -36,6 +37,7 @@ func NewImageBuildParams() *ImageBuildParams {
 		Dockerfile:  &dockerfileDefault,
 		Forcerm:     &forcermDefault,
 		Nocache:     &nocacheDefault,
+		Platform:    &platformDefault,
 		Q:           &qDefault,
 		Rm:          &rmDefault,
 
@@ -51,6 +53,7 @@ func NewImageBuildParamsWithTimeout(timeout time.Duration) *ImageBuildParams {
 		dockerfileDefault  = string("Dockerfile")
 		forcermDefault     = bool(false)
 		nocacheDefault     = bool(false)
+		platformDefault    = string("")
 		qDefault           = bool(false)
 		rmDefault          = bool(true)
 	)
@@ -59,6 +62,7 @@ func NewImageBuildParamsWithTimeout(timeout time.Duration) *ImageBuildParams {
 		Dockerfile:  &dockerfileDefault,
 		Forcerm:     &forcermDefault,
 		Nocache:     &nocacheDefault,
+		Platform:    &platformDefault,
 		Q:           &qDefault,
 		Rm:          &rmDefault,
 
@@ -74,6 +78,7 @@ func NewImageBuildParamsWithContext(ctx context.Context) *ImageBuildParams {
 		dockerfileDefault  = string("Dockerfile")
 		forcermDefault     = bool(false)
 		nocacheDefault     = bool(false)
+		platformDefault    = string("")
 		qDefault           = bool(false)
 		rmDefault          = bool(true)
 	)
@@ -82,6 +87,7 @@ func NewImageBuildParamsWithContext(ctx context.Context) *ImageBuildParams {
 		Dockerfile:  &dockerfileDefault,
 		Forcerm:     &forcermDefault,
 		Nocache:     &nocacheDefault,
+		Platform:    &platformDefault,
 		Q:           &qDefault,
 		Rm:          &rmDefault,
 
@@ -97,6 +103,7 @@ func NewImageBuildParamsWithHTTPClient(client *http.Client) *ImageBuildParams {
 		dockerfileDefault  = string("Dockerfile")
 		forcermDefault     = bool(false)
 		nocacheDefault     = bool(false)
+		platformDefault    = string("")
 		qDefault           = bool(false)
 		rmDefault          = bool(true)
 	)
@@ -105,6 +112,7 @@ func NewImageBuildParamsWithHTTPClient(client *http.Client) *ImageBuildParams {
 		Dockerfile:  &dockerfileDefault,
 		Forcerm:     &forcermDefault,
 		Nocache:     &nocacheDefault,
+		Platform:    &platformDefault,
 		Q:           &qDefault,
 		Rm:          &rmDefault,
 		HTTPClient:  client,
@@ -216,6 +224,11 @@ type ImageBuildParams struct {
 
 	*/
 	Nocache *bool
+	/*Platform
+	  Platform in the format os[/arch[/variant]]
+
+	*/
+	Platform *string
 	/*Pull
 	  Attempt to pull the image even if an older image exists locally.
 
@@ -475,6 +488,17 @@ func (o *ImageBuildParams) WithNocache(nocache *bool) *ImageBuildParams {
 // SetNocache adds the nocache to the image build params
 func (o *ImageBuildParams) SetNocache(nocache *bool) {
 	o.Nocache = nocache
+}
+
+// WithPlatform adds the platform to the image build params
+func (o *ImageBuildParams) WithPlatform(platform *string) *ImageBuildParams {
+	o.SetPlatform(platform)
+	return o
+}
+
+// SetPlatform adds the platform to the image build params
+func (o *ImageBuildParams) SetPlatform(platform *string) {
+	o.Platform = platform
 }
 
 // WithPull adds the pull to the image build params
@@ -804,6 +828,22 @@ func (o *ImageBuildParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Re
 		qNocache := swag.FormatBool(qrNocache)
 		if qNocache != "" {
 			if err := r.SetQueryParam("nocache", qNocache); err != nil {
+				return err
+			}
+		}
+
+	}
+
+	if o.Platform != nil {
+
+		// query param platform
+		var qrPlatform string
+		if o.Platform != nil {
+			qrPlatform = *o.Platform
+		}
+		qPlatform := qrPlatform
+		if qPlatform != "" {
+			if err := r.SetQueryParam("platform", qPlatform); err != nil {
 				return err
 			}
 		}

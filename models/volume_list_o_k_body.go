@@ -13,7 +13,7 @@ import (
 	"github.com/go-openapi/validate"
 )
 
-// VolumeListOKBody volume list o k body
+// VolumeListOKBody VolumeListResponse
 // swagger:model volumeListOKBody
 type VolumeListOKBody struct {
 

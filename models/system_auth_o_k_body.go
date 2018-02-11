@@ -13,7 +13,7 @@ import (
 	"github.com/go-openapi/validate"
 )
 
-// SystemAuthOKBody system auth o k body
+// SystemAuthOKBody SystemAuthResponse
 // swagger:model systemAuthOKBody
 type SystemAuthOKBody struct {
 

@@ -16,11 +16,11 @@ import (
 // swagger:model ProgressDetail
 type ProgressDetail struct {
 
-	// code
-	Code int64 `json:"code,omitempty"`
+	// current
+	Current int64 `json:"current,omitempty"`
 
-	// message
-	Message int64 `json:"message,omitempty"`
+	// total
+	Total int64 `json:"total,omitempty"`
 }
 
 // Validate validates this progress detail

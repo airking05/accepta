@@ -38,7 +38,7 @@ func (a *Client) NetworkConnect(params *NetworkConnectParams) (*NetworkConnectOK
 		Method:             "POST",
 		PathPattern:        "/networks/{id}/connect",
 		ProducesMediaTypes: []string{"application/json", "text/plain"},
-		ConsumesMediaTypes: []string{"application/octet-stream"},
+		ConsumesMediaTypes: []string{"application/json"},
 		Schemes:            []string{"http", "https"},
 		Params:             params,
 		Reader:             &NetworkConnectReader{formats: a.formats},

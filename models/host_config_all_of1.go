@@ -104,12 +104,20 @@ type HostConfigAllOf1 struct {
 	PidMode string `json:"PidMode,omitempty"`
 
 	// port bindings
-	PortBindings HostConfigAllOf1PortBindings `json:"PortBindings,omitempty"`
+	PortBindings PortMap `json:"PortBindings,omitempty"`
 
 	// Gives the container full access to the host.
 	Privileged bool `json:"Privileged,omitempty"`
 
-	// Allocates a random host port for all of a container's exposed ports.
+	// Allocates an ephemeral host port for all of a container's
+	// exposed ports.
+	//
+	// Ports are de-allocated when the container stops and allocated when the container starts.
+	// The allocated port might be changed when restarting the container.
+	//
+	// The port is selected from the ephemeral port range that depends on the kernel.
+	// For example, on Linux the range is defined by `/proc/sys/net/ipv4/ip_local_port_range`.
+	//
 	PublishAllPorts bool `json:"PublishAllPorts,omitempty"`
 
 	// Mount the container's root filesystem as read only.

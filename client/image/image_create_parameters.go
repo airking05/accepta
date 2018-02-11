@@ -21,8 +21,11 @@ import (
 // NewImageCreateParams creates a new ImageCreateParams object
 // with the default values initialized.
 func NewImageCreateParams() *ImageCreateParams {
-	var ()
+	var (
+		platformDefault = string("")
+	)
 	return &ImageCreateParams{
+		Platform: &platformDefault,
 
 		timeout: cr.DefaultTimeout,
 	}
@@ -31,8 +34,11 @@ func NewImageCreateParams() *ImageCreateParams {
 // NewImageCreateParamsWithTimeout creates a new ImageCreateParams object
 // with the default values initialized, and the ability to set a timeout on a request
 func NewImageCreateParamsWithTimeout(timeout time.Duration) *ImageCreateParams {
-	var ()
+	var (
+		platformDefault = string("")
+	)
 	return &ImageCreateParams{
+		Platform: &platformDefault,
 
 		timeout: timeout,
 	}
@@ -41,8 +47,11 @@ func NewImageCreateParamsWithTimeout(timeout time.Duration) *ImageCreateParams {
 // NewImageCreateParamsWithContext creates a new ImageCreateParams object
 // with the default values initialized, and the ability to set a context for a request
 func NewImageCreateParamsWithContext(ctx context.Context) *ImageCreateParams {
-	var ()
+	var (
+		platformDefault = string("")
+	)
 	return &ImageCreateParams{
+		Platform: &platformDefault,
 
 		Context: ctx,
 	}
@@ -51,8 +60,11 @@ func NewImageCreateParamsWithContext(ctx context.Context) *ImageCreateParams {
 // NewImageCreateParamsWithHTTPClient creates a new ImageCreateParams object
 // with the default values initialized, and the ability to set a custom HTTPClient for a request
 func NewImageCreateParamsWithHTTPClient(client *http.Client) *ImageCreateParams {
-	var ()
+	var (
+		platformDefault = string("")
+	)
 	return &ImageCreateParams{
+		Platform:   &platformDefault,
 		HTTPClient: client,
 	}
 }
@@ -82,6 +94,11 @@ type ImageCreateParams struct {
 
 	*/
 	InputImage string
+	/*Platform
+	  Platform in the format os[/arch[/variant]]
+
+	*/
+	Platform *string
 	/*Repo
 	  Repository name given to an image when it is imported. The repo may include a tag. This parameter may only be used when importing an image.
 
@@ -175,6 +192,17 @@ func (o *ImageCreateParams) SetInputImage(inputImage string) {
 	o.InputImage = inputImage
 }
 
+// WithPlatform adds the platform to the image create params
+func (o *ImageCreateParams) WithPlatform(platform *string) *ImageCreateParams {
+	o.SetPlatform(platform)
+	return o
+}
+
+// SetPlatform adds the platform to the image create params
+func (o *ImageCreateParams) SetPlatform(platform *string) {
+	o.Platform = platform
+}
+
 // WithRepo adds the repo to the image create params
 func (o *ImageCreateParams) WithRepo(repo *string) *ImageCreateParams {
 	o.SetRepo(repo)
@@ -240,6 +268,22 @@ func (o *ImageCreateParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.R
 		qFromSrc := qrFromSrc
 		if qFromSrc != "" {
 			if err := r.SetQueryParam("fromSrc", qFromSrc); err != nil {
+				return err
+			}
+		}
+
+	}
+
+	if o.Platform != nil {
+
+		// query param platform
+		var qrPlatform string
+		if o.Platform != nil {
+			qrPlatform = *o.Platform
+		}
+		qPlatform := qrPlatform
+		if qPlatform != "" {
+			if err := r.SetQueryParam("platform", qPlatform); err != nil {
 				return err
 			}
 		}

@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// SwarmUnlockkeyOKBody swarm unlockkey o k body
+// SwarmUnlockkeyOKBody UnlockKeyResponse
 // swagger:model swarmUnlockkeyOKBody
 type SwarmUnlockkeyOKBody struct {
 

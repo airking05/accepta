@@ -6,10 +6,13 @@ package models
 // Editing this file might prove futile when you re-run the swagger generate command
 
 import (
+	"encoding/json"
+
 	strfmt "github.com/go-openapi/strfmt"
 
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/swag"
+	"github.com/go-openapi/validate"
 )
 
 // TaskSpecContainerSpec Invalid when specified with `PluginSpec`.
@@ -54,6 +57,9 @@ type TaskSpecContainerSpec struct {
 
 	// The image name to use for the container
 	Image string `json:"Image,omitempty"`
+
+	// Isolation technology of the containers running the service. (Windows only)
+	Isolation string `json:"Isolation,omitempty"`
 
 	// User-defined key/value data.
 	Labels map[string]string `json:"Labels,omitempty"`
@@ -121,6 +127,11 @@ func (m *TaskSpecContainerSpec) Validate(formats strfmt.Registry) error {
 	}
 
 	if err := m.validateHosts(formats); err != nil {
+		// prop
+		res = append(res, err)
+	}
+
+	if err := m.validateIsolation(formats); err != nil {
 		// prop
 		res = append(res, err)
 	}
@@ -216,6 +227,52 @@ func (m *TaskSpecContainerSpec) validateHosts(formats strfmt.Registry) error {
 
 	if swag.IsZero(m.Hosts) { // not required
 		return nil
+	}
+
+	return nil
+}
+
+var taskSpecContainerSpecTypeIsolationPropEnum []interface{}
+
+func init() {
+	var res []string
+	if err := json.Unmarshal([]byte(`["default","process","hyperv"]`), &res); err != nil {
+		panic(err)
+	}
+	for _, v := range res {
+		taskSpecContainerSpecTypeIsolationPropEnum = append(taskSpecContainerSpecTypeIsolationPropEnum, v)
+	}
+}
+
+const (
+
+	// TaskSpecContainerSpecIsolationDefault captures enum value "default"
+	TaskSpecContainerSpecIsolationDefault string = "default"
+
+	// TaskSpecContainerSpecIsolationProcess captures enum value "process"
+	TaskSpecContainerSpecIsolationProcess string = "process"
+
+	// TaskSpecContainerSpecIsolationHyperv captures enum value "hyperv"
+	TaskSpecContainerSpecIsolationHyperv string = "hyperv"
+)
+
+// prop value enum
+func (m *TaskSpecContainerSpec) validateIsolationEnum(path, location string, value string) error {
+	if err := validate.Enum(path, location, value, taskSpecContainerSpecTypeIsolationPropEnum); err != nil {
+		return err
+	}
+	return nil
+}
+
+func (m *TaskSpecContainerSpec) validateIsolation(formats strfmt.Registry) error {
+
+	if swag.IsZero(m.Isolation) { // not required
+		return nil
+	}
+
+	// value enum
+	if err := m.validateIsolationEnum("Isolation", "body", m.Isolation); err != nil {
+		return err
 	}
 
 	return nil

@@ -13,7 +13,9 @@ import (
 	"github.com/go-openapi/validate"
 )
 
-// HistoryResponseItem history response item
+// HistoryResponseItem HistoryResponseItem
+//
+// individual image layer information in response to ImageHistory operation
 // swagger:model HistoryResponseItem
 type HistoryResponseItem struct {
 

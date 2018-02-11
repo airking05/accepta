@@ -16,6 +16,9 @@ import (
 // swagger:model BuildInfo
 type BuildInfo struct {
 
+	// aux
+	Aux *ImageID `json:"aux,omitempty"`
+
 	// error
 	Error string `json:"error,omitempty"`
 
@@ -42,6 +45,11 @@ type BuildInfo struct {
 func (m *BuildInfo) Validate(formats strfmt.Registry) error {
 	var res []error
 
+	if err := m.validateAux(formats); err != nil {
+		// prop
+		res = append(res, err)
+	}
+
 	if err := m.validateErrorDetail(formats); err != nil {
 		// prop
 		res = append(res, err)
@@ -55,6 +63,26 @@ func (m *BuildInfo) Validate(formats strfmt.Registry) error {
 	if len(res) > 0 {
 		return errors.CompositeValidationError(res...)
 	}
+	return nil
+}
+
+func (m *BuildInfo) validateAux(formats strfmt.Registry) error {
+
+	if swag.IsZero(m.Aux) { // not required
+		return nil
+	}
+
+	if m.Aux != nil {
+
+		if err := m.Aux.Validate(formats); err != nil {
+			if ve, ok := err.(*errors.Validation); ok {
+				return ve.ValidateName("aux")
+			}
+			return err
+		}
+
+	}
+
 	return nil
 }
 

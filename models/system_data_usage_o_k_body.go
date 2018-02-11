@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// SystemDataUsageOKBody system data usage o k body
+// SystemDataUsageOKBody SystemDataUsageResponse
 // swagger:model systemDataUsageOKBody
 type SystemDataUsageOKBody struct {
 

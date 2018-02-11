@@ -15,7 +15,9 @@ import (
 	"github.com/go-openapi/validate"
 )
 
-// ContainerChangeResponseItem container change response item
+// ContainerChangeResponseItem ContainerChangeResponseItem
+//
+// change item in response to ContainerChanges operation
 // swagger:model ContainerChangeResponseItem
 type ContainerChangeResponseItem struct {
 

@@ -13,7 +13,7 @@ import (
 	"github.com/go-openapi/validate"
 )
 
-// DistributionInspect distribution inspect
+// DistributionInspect DistributionInspectResponse
 // swagger:model DistributionInspect
 type DistributionInspect struct {
 

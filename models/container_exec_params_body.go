@@ -42,6 +42,9 @@ type ContainerExecParamsBody struct {
 
 	// The user, and optionally, group to run the exec process inside the container. Format is one of: `user`, `user:group`, `uid`, or `uid:gid`.
 	User string `json:"User,omitempty"`
+
+	// The working directory for the exec process inside the container.
+	WorkingDir string `json:"WorkingDir,omitempty"`
 }
 
 // Validate validates this container exec params body

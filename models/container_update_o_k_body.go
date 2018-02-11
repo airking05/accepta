@@ -12,7 +12,9 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// ContainerUpdateOKBody container update o k body
+// ContainerUpdateOKBody ContainerUpdateResponse
+//
+// OK response to ContainerUpdate operation
 // swagger:model containerUpdateOKBody
 type ContainerUpdateOKBody struct {
 

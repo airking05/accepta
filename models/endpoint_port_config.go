@@ -25,6 +25,18 @@ type EndpointPortConfig struct {
 	// protocol
 	Protocol string `json:"Protocol,omitempty"`
 
+	// The mode in which port is published.
+	//
+	// <p><br /></p>
+	//
+	// - "ingress" makes the target port accessible on on every node,
+	//   regardless of whether there is a task for the service running on
+	//   that node or not.
+	// - "host" bypasses the routing mesh and publish the port directly on
+	//   the swarm node where that service is running.
+	//
+	PublishMode *string `json:"PublishMode,omitempty"`
+
 	// The port on the swarm hosts.
 	PublishedPort int64 `json:"PublishedPort,omitempty"`
 
@@ -37,6 +49,11 @@ func (m *EndpointPortConfig) Validate(formats strfmt.Registry) error {
 	var res []error
 
 	if err := m.validateProtocol(formats); err != nil {
+		// prop
+		res = append(res, err)
+	}
+
+	if err := m.validatePublishMode(formats); err != nil {
 		// prop
 		res = append(res, err)
 	}
@@ -84,6 +101,49 @@ func (m *EndpointPortConfig) validateProtocol(formats strfmt.Registry) error {
 
 	// value enum
 	if err := m.validateProtocolEnum("Protocol", "body", m.Protocol); err != nil {
+		return err
+	}
+
+	return nil
+}
+
+var endpointPortConfigTypePublishModePropEnum []interface{}
+
+func init() {
+	var res []string
+	if err := json.Unmarshal([]byte(`["ingress","host"]`), &res); err != nil {
+		panic(err)
+	}
+	for _, v := range res {
+		endpointPortConfigTypePublishModePropEnum = append(endpointPortConfigTypePublishModePropEnum, v)
+	}
+}
+
+const (
+
+	// EndpointPortConfigPublishModeIngress captures enum value "ingress"
+	EndpointPortConfigPublishModeIngress string = "ingress"
+
+	// EndpointPortConfigPublishModeHost captures enum value "host"
+	EndpointPortConfigPublishModeHost string = "host"
+)
+
+// prop value enum
+func (m *EndpointPortConfig) validatePublishModeEnum(path, location string, value string) error {
+	if err := validate.Enum(path, location, value, endpointPortConfigTypePublishModePropEnum); err != nil {
+		return err
+	}
+	return nil
+}
+
+func (m *EndpointPortConfig) validatePublishMode(formats strfmt.Registry) error {
+
+	if swag.IsZero(m.PublishMode) { // not required
+		return nil
+	}
+
+	// value enum
+	if err := m.validatePublishModeEnum("PublishMode", "body", *m.PublishMode); err != nil {
 		return err
 	}
 

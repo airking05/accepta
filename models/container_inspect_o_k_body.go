@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// ContainerInspectOKBody container inspect o k body
+// ContainerInspectOKBody ContainerInspectResponse
 // swagger:model containerInspectOKBody
 type ContainerInspectOKBody struct {
 

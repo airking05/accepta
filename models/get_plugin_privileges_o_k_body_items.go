@@ -12,7 +12,9 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// GetPluginPrivilegesOKBodyItems Describes a permission the user has to accept upon installing the plugin.
+// GetPluginPrivilegesOKBodyItems PluginPrivilegeItem
+//
+// Describes a permission the user has to accept upon installing the plugin.
 // swagger:model getPluginPrivilegesOKBodyItems
 type GetPluginPrivilegesOKBodyItems struct {
 

@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// SystemVersionOKBody system version o k body
+// SystemVersionOKBody SystemVersionResponse
 // swagger:model systemVersionOKBody
 type SystemVersionOKBody struct {
 
@@ -24,6 +24,9 @@ type SystemVersionOKBody struct {
 
 	// build time
 	BuildTime string `json:"BuildTime,omitempty"`
+
+	// components
+	Components SystemVersionOKBodyComponents `json:"Components"`
 
 	// experimental
 	Experimental bool `json:"Experimental,omitempty"`
@@ -43,6 +46,9 @@ type SystemVersionOKBody struct {
 	// os
 	Os string `json:"Os,omitempty"`
 
+	// platform
+	Platform *SystemVersionOKBodyPlatform `json:"Platform,omitempty"`
+
 	// version
 	Version string `json:"Version,omitempty"`
 }
@@ -51,9 +57,34 @@ type SystemVersionOKBody struct {
 func (m *SystemVersionOKBody) Validate(formats strfmt.Registry) error {
 	var res []error
 
+	if err := m.validatePlatform(formats); err != nil {
+		// prop
+		res = append(res, err)
+	}
+
 	if len(res) > 0 {
 		return errors.CompositeValidationError(res...)
 	}
+	return nil
+}
+
+func (m *SystemVersionOKBody) validatePlatform(formats strfmt.Registry) error {
+
+	if swag.IsZero(m.Platform) { // not required
+		return nil
+	}
+
+	if m.Platform != nil {
+
+		if err := m.Platform.Validate(formats); err != nil {
+			if ve, ok := err.(*errors.Validation); ok {
+				return ve.ValidateName("Platform")
+			}
+			return err
+		}
+
+	}
+
 	return nil
 }
 

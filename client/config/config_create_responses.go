@@ -68,7 +68,7 @@ func NewConfigCreateCreated() *ConfigCreateCreated {
 no error
 */
 type ConfigCreateCreated struct {
-	Payload *models.ConfigCreateCreatedBody
+	Payload *models.IDResponse
 }
 
 func (o *ConfigCreateCreated) Error() string {
@@ -77,7 +77,7 @@ func (o *ConfigCreateCreated) Error() string {
 
 func (o *ConfigCreateCreated) readResponse(response runtime.ClientResponse, consumer runtime.Consumer, formats strfmt.Registry) error {
 
-	o.Payload = new(models.ConfigCreateCreatedBody)
+	o.Payload = new(models.IDResponse)
 
 	// response payload
 	if err := consumer.Consume(response.Body(), o.Payload); err != nil && err != io.EOF {

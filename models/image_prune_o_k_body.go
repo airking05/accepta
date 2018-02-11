@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// ImagePruneOKBody image prune o k body
+// ImagePruneOKBody ImagePruneResponse
 // swagger:model imagePruneOKBody
 type ImagePruneOKBody struct {
 

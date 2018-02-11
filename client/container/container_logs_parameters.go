@@ -29,6 +29,7 @@ func NewContainerLogsParams() *ContainerLogsParams {
 		stdoutDefault     = bool(false)
 		tailDefault       = string("all")
 		timestampsDefault = bool(false)
+		untilDefault      = int64(0)
 	)
 	return &ContainerLogsParams{
 		Follow:     &followDefault,
@@ -37,6 +38,7 @@ func NewContainerLogsParams() *ContainerLogsParams {
 		Stdout:     &stdoutDefault,
 		Tail:       &tailDefault,
 		Timestamps: &timestampsDefault,
+		Until:      &untilDefault,
 
 		timeout: cr.DefaultTimeout,
 	}
@@ -52,6 +54,7 @@ func NewContainerLogsParamsWithTimeout(timeout time.Duration) *ContainerLogsPara
 		stdoutDefault     = bool(false)
 		tailDefault       = string("all")
 		timestampsDefault = bool(false)
+		untilDefault      = int64(0)
 	)
 	return &ContainerLogsParams{
 		Follow:     &followDefault,
@@ -60,6 +63,7 @@ func NewContainerLogsParamsWithTimeout(timeout time.Duration) *ContainerLogsPara
 		Stdout:     &stdoutDefault,
 		Tail:       &tailDefault,
 		Timestamps: &timestampsDefault,
+		Until:      &untilDefault,
 
 		timeout: timeout,
 	}
@@ -75,6 +79,7 @@ func NewContainerLogsParamsWithContext(ctx context.Context) *ContainerLogsParams
 		stdoutDefault     = bool(false)
 		tailDefault       = string("all")
 		timestampsDefault = bool(false)
+		untilDefault      = int64(0)
 	)
 	return &ContainerLogsParams{
 		Follow:     &followDefault,
@@ -83,6 +88,7 @@ func NewContainerLogsParamsWithContext(ctx context.Context) *ContainerLogsParams
 		Stdout:     &stdoutDefault,
 		Tail:       &tailDefault,
 		Timestamps: &timestampsDefault,
+		Until:      &untilDefault,
 
 		Context: ctx,
 	}
@@ -98,6 +104,7 @@ func NewContainerLogsParamsWithHTTPClient(client *http.Client) *ContainerLogsPar
 		stdoutDefault     = bool(false)
 		tailDefault       = string("all")
 		timestampsDefault = bool(false)
+		untilDefault      = int64(0)
 	)
 	return &ContainerLogsParams{
 		Follow:     &followDefault,
@@ -106,6 +113,7 @@ func NewContainerLogsParamsWithHTTPClient(client *http.Client) *ContainerLogsPar
 		Stdout:     &stdoutDefault,
 		Tail:       &tailDefault,
 		Timestamps: &timestampsDefault,
+		Until:      &untilDefault,
 		HTTPClient: client,
 	}
 }
@@ -153,6 +161,11 @@ type ContainerLogsParams struct {
 
 	*/
 	Timestamps *bool
+	/*Until
+	  Only return logs before this time, as a UNIX timestamp
+
+	*/
+	Until *int64
 
 	timeout    time.Duration
 	Context    context.Context
@@ -269,6 +282,17 @@ func (o *ContainerLogsParams) SetTimestamps(timestamps *bool) {
 	o.Timestamps = timestamps
 }
 
+// WithUntil adds the until to the container logs params
+func (o *ContainerLogsParams) WithUntil(until *int64) *ContainerLogsParams {
+	o.SetUntil(until)
+	return o
+}
+
+// SetUntil adds the until to the container logs params
+func (o *ContainerLogsParams) SetUntil(until *int64) {
+	o.Until = until
+}
+
 // WriteToRequest writes these params to a swagger request
 func (o *ContainerLogsParams) WriteToRequest(r runtime.ClientRequest, reg strfmt.Registry) error {
 
@@ -372,6 +396,22 @@ func (o *ContainerLogsParams) WriteToRequest(r runtime.ClientRequest, reg strfmt
 		qTimestamps := swag.FormatBool(qrTimestamps)
 		if qTimestamps != "" {
 			if err := r.SetQueryParam("timestamps", qTimestamps); err != nil {
+				return err
+			}
+		}
+
+	}
+
+	if o.Until != nil {
+
+		// query param until
+		var qrUntil int64
+		if o.Until != nil {
+			qrUntil = *o.Until
+		}
+		qUntil := swag.FormatInt64(qrUntil)
+		if qUntil != "" {
+			if err := r.SetQueryParam("until", qUntil); err != nil {
 				return err
 			}
 		}

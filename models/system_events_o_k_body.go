@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// SystemEventsOKBody system events o k body
+// SystemEventsOKBody SystemEventsResponse
 // swagger:model systemEventsOKBody
 type SystemEventsOKBody struct {
 

@@ -20,7 +20,7 @@ import (
 type MountBindOptions struct {
 
 	// A propagation mode with the value `[r]private`, `[r]shared`, or `[r]slave`.
-	Propagation interface{} `json:"Propagation,omitempty"`
+	Propagation string `json:"Propagation,omitempty"`
 }
 
 // Validate validates this mount bind options
@@ -41,7 +41,7 @@ func (m *MountBindOptions) Validate(formats strfmt.Registry) error {
 var mountBindOptionsTypePropagationPropEnum []interface{}
 
 func init() {
-	var res []interface{}
+	var res []string
 	if err := json.Unmarshal([]byte(`["private","rprivate","shared","rshared","slave","rslave"]`), &res); err != nil {
 		panic(err)
 	}
@@ -50,8 +50,29 @@ func init() {
 	}
 }
 
+const (
+
+	// MountBindOptionsPropagationPrivate captures enum value "private"
+	MountBindOptionsPropagationPrivate string = "private"
+
+	// MountBindOptionsPropagationRprivate captures enum value "rprivate"
+	MountBindOptionsPropagationRprivate string = "rprivate"
+
+	// MountBindOptionsPropagationShared captures enum value "shared"
+	MountBindOptionsPropagationShared string = "shared"
+
+	// MountBindOptionsPropagationRshared captures enum value "rshared"
+	MountBindOptionsPropagationRshared string = "rshared"
+
+	// MountBindOptionsPropagationSLAVE captures enum value "slave"
+	MountBindOptionsPropagationSLAVE string = "slave"
+
+	// MountBindOptionsPropagationRslave captures enum value "rslave"
+	MountBindOptionsPropagationRslave string = "rslave"
+)
+
 // prop value enum
-func (m *MountBindOptions) validatePropagationEnum(path, location string, value interface{}) error {
+func (m *MountBindOptions) validatePropagationEnum(path, location string, value string) error {
 	if err := validate.Enum(path, location, value, mountBindOptionsTypePropagationPropEnum); err != nil {
 		return err
 	}
@@ -62,6 +83,11 @@ func (m *MountBindOptions) validatePropagation(formats strfmt.Registry) error {
 
 	if swag.IsZero(m.Propagation) { // not required
 		return nil
+	}
+
+	// value enum
+	if err := m.validatePropagationEnum("Propagation", "body", m.Propagation); err != nil {
+		return err
 	}
 
 	return nil

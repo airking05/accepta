@@ -15,7 +15,7 @@ build:
 
 swagger:
 	go get -u github.com/go-swagger/go-swagger/cmd/swagger
-	swagger generate client -f swaggers/api133.yaml -A core
+	swagger generate client -f swaggers/api136.yaml -A core
 
 run:
 	$(GO) run *.go

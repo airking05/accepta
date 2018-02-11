@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// ContainerPruneOKBody container prune o k body
+// ContainerPruneOKBody ContainerPruneResponse
 // swagger:model containerPruneOKBody
 type ContainerPruneOKBody struct {
 

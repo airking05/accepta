@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/swag"
 )
 
-// ServiceCreateCreatedBody service create created body
+// ServiceCreateCreatedBody ServiceCreateResponse
 // swagger:model serviceCreateCreatedBody
 type ServiceCreateCreatedBody struct {
 

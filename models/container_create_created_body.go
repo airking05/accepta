@@ -13,7 +13,9 @@ import (
 	"github.com/go-openapi/validate"
 )
 
-// ContainerCreateCreatedBody container create created body
+// ContainerCreateCreatedBody ContainerCreateResponse
+//
+// OK response to ContainerCreate operation
 // swagger:model containerCreateCreatedBody
 type ContainerCreateCreatedBody struct {
 
