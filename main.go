@@ -1,13 +1,13 @@
 package accepta
 
 import (
-	apiclient "github.com/airking05/accepta/client"
-	"github.com/airking05/accepta/client/container"
+	apiclient "github.com/airking05/go-docker-api-client/client"
+	"github.com/airking05/go-docker-api-client/client/container"
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 	"context"
 	"fmt"
-	"github.com/airking05/accepta/wrapper"
+	"github.com/airking05/go-docker-api-client/wrapper"
 )
 
 func NewDefault() *wrapper.Client {

@@ -1,9 +1,9 @@
 package wrapper
 
 import (
-	apiclient "github.com/airking05/accepta/client"
-	"github.com/airking05/accepta/client/container"
-	"github.com/airking05/accepta/models"
+	apiclient "github.com/airking05/go-docker-api-client/client"
+	"github.com/airking05/go-docker-api-client/client/container"
+	"github.com/airking05/go-docker-api-client/models"
 	"io"
 )
 
