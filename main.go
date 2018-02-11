@@ -1,4 +1,4 @@
-package accepta
+package main
 
 import (
 	apiclient "github.com/airking05/go-docker-api-client/client"
