@@ -2,498 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="570546a2-25e1-4e23-969e-e0129960df6d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.travis.yml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_create_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_create_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_update_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/config/config_update_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_archive_info_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_archive_info_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_archive_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_archive_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_attach_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_attach_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_attach_websocket_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_attach_websocket_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_changes_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_changes_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_create_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_create_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_export_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_export_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_kill_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_kill_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_logs_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_logs_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_pause_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_pause_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_prune_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_prune_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_rename_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_rename_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_resize_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_resize_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_restart_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_restart_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_start_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_start_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_stats_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_stats_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_stop_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_stop_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_top_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_top_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_unpause_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_unpause_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_update_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_update_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_wait_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/container_wait_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/put_container_archive_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/container/put_container_archive_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/core_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/distribution/distribution_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/distribution/distribution_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/distribution/distribution_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/container_exec_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/container_exec_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/exec_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/exec_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/exec_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/exec_resize_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/exec_resize_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/exec_start_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/exec/exec_start_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/build_prune_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/build_prune_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_build_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_build_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_commit_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_commit_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_create_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_create_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_get_all_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_get_all_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_get_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_get_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_history_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_history_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_load_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_load_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_prune_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_prune_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_push_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_push_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_search_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_search_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_tag_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/image/image_tag_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_connect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_connect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_create_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_create_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_disconnect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_disconnect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_prune_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/network/network_prune_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_update_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/node/node_update_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/operations/operations_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/operations/task_logs_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/operations/task_logs_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/get_plugin_privileges_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/get_plugin_privileges_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_create_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_create_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_disable_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_disable_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_enable_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_enable_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_pull_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_pull_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_push_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_push_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_set_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_set_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_upgrade_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/plugin/plugin_upgrade_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_create_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_create_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_update_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/secret/secret_update_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_create_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_create_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_logs_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_logs_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_update_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/service/service_update_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/session_experimental/session_experimental_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/session_experimental/session_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/session_experimental/session_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_init_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_init_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_join_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_join_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_leave_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_leave_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_unlock_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_unlock_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_unlockkey_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_unlockkey_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_update_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/swarm/swarm_update_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_auth_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_auth_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_data_usage_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_data_usage_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_events_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_events_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_info_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_info_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_ping_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_ping_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_version_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/system/system_version_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/task/task_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/task/task_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/task/task_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/task/task_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/task/task_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_client.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_create_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_create_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_delete_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_delete_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_inspect_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_inspect_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_list_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_list_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_prune_parameters.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/client/volume/volume_prune_responses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/main.go" afterPath="$PROJECT_DIR$/main.go" />
-      <change beforePath="$PROJECT_DIR$/models/address.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/auth_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/build_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/build_prune_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/cluster_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/commit.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/config_create_created_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/config_create_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/config_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/config_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_archive_bad_request_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_archive_bad_request_body_all_of1.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_archive_info_bad_request_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_archive_info_bad_request_body_all_of1.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_change_response_item.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_changes_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_config_volumes.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_create_created_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_create_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_create_params_body_all_of1.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_create_params_body_all_of1_networking_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_create_params_body_all_of1_networking_config_endpoints_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_exec_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_inspect_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_inspect_o_k_body_mounts.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_inspect_o_k_body_state.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_prune_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_summary.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_summary_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_summary_items_host_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_summary_items_mounts.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_summary_items_network_settings.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_summary_items_network_settings_networks.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_summary_items_ports.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_top_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_update_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_update_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_update_params_body_all_of1.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/container_wait_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/create_image_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/device_mapping.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/distribution_inspect.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/distribution_inspect_o_k_body_descriptor.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/distribution_inspect_o_k_body_platforms.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/distribution_inspect_o_k_body_platforms_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/driver.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/endpoint_ip_a_m_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/endpoint_port_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/endpoint_settings.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/endpoint_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/endpoint_spec_ports.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/engine_description.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/engine_description_plugins.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/engine_description_plugins_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/error_detail.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/error_response.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/exec_inspect_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/exec_start_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/generic_resources.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/generic_resources_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/generic_resources_items_discrete_resource_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/generic_resources_items_named_resource_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/get_plugin_privileges_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/get_plugin_privileges_o_k_body_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/graph_driver_data.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/health_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/history_response_item.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/host_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/host_config_all_of1.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/host_config_all_of1_log_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/host_config_all_of1_mounts.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/host_config_all_of1_port_bindings.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/host_config_all_of1_port_bindings_additional_properties.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/id_response.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_delete_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_delete_response_item.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_history_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_metadata.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_prune_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_prune_o_k_body_images_deleted.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_root_f_s.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_search_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_search_o_k_body_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/image_summary.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/index_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/ip_a_m.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/join_tokens.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/local_node_state.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/manager_status.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/mount.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/mount_bind_options.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/mount_point.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/mount_tmpfs_options.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/mount_volume_options.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/mount_volume_options_driver_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_connect_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_container.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_containers.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_create_created_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_create_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_disconnect_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_prune_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_settings.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_settings_networks.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_settings_secondary_ip_addresses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/network_settings_secondary_ip_v6_addresses.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/node.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/node_description.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/node_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/node_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/node_state.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/node_status.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/object_version.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/peer_node.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/platform.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_args.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_env.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_interface.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_interface_types.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_linux.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_linux_devices.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_mounts.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_network.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_rootfs.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_config_user.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_device.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_env.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_interface_type.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_mount.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_pull_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_pull_params_body_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_settings.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_settings_devices.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_settings_mounts.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_upgrade_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugin_upgrade_params_body_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/plugins_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/port.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/port_binding.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/port_map.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/port_map_additional_properties.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/process_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/progress_detail.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/push_image_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/reachability.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/registry_service_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/registry_service_config_index_configs.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resource_object.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_blkio_device_read_bps.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_blkio_device_read_i_ops.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_blkio_device_write_bps.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_blkio_device_write_i_ops.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_blkio_weight_device.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_blkio_weight_device_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_devices.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_ulimits.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/resources_ulimits_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/restart_policy.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/runtime.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/secret.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/secret_create_created_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/secret_create_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/secret_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/secret_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_create_created_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_create_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_endpoint.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_endpoint_ports.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_endpoint_virtual_ips.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_endpoint_virtual_ips_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_spec_mode.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_spec_mode_replicated.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_spec_networks.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_spec_networks_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_spec_rollback_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_spec_update_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_update_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_update_response.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/service_update_status.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_all_of1.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_info_remote_managers.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_init_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_join_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_c_a_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_c_a_config_external_c_as.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_c_a_config_external_c_as_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_dispatcher.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_encryption_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_orchestration.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_raft.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_task_defaults.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_spec_task_defaults_log_driver.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_unlock_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/swarm_unlockkey_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_auth_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_data_usage_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_data_usage_o_k_body_containers.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_data_usage_o_k_body_images.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_data_usage_o_k_body_volumes.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_events_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_events_o_k_body_actor.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_info_runtimes.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/system_version_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_configs.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_configs_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_configs_items_file.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_dns_config.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_mounts.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_privileges.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_privileges_credential_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_privileges_s_e_linux_context.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_secrets.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_secrets_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_container_spec_secrets_items_file.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_log_driver.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_networks.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_networks_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_placement.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_placement_platforms.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_placement_preferences.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_placement_preferences_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_placement_preferences_items_spread.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_plugin_spec.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_plugin_spec_plugin_privilege.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_plugin_spec_plugin_privilege_items.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_resources.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_spec_restart_policy.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_state.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_status.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/task_status_container_status.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/throttle_device.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/tls_info.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/volume.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/volume_create_params_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/volume_list_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/volume_list_o_k_body_volumes.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/volume_prune_o_k_body.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/models/volume_usage_data.go" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/wrapper/client.go" afterPath="$PROJECT_DIR$/wrapper/client.go" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -526,11 +36,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="102">
+              <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="221">
+                <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+                <folding>
+                  <marker date="1518364802887" expanded="true" signature="565:694" ph="..." />
+                  <marker date="1518364802887" expanded="true" signature="708:1047" ph="{...}" />
+                  <marker date="1518364802887" expanded="true" signature="708:1052" ph="{...}" />
+                  <marker date="1518364802887" expanded="true" signature="900:923" ph="{...}" />
+                  <marker date="1518364802887" expanded="true" signature="964:1046" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -557,6 +96,7 @@
       <list>
         <option value="$PROJECT_DIR$/wrapper/client.go" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -610,6 +150,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="go.sdk.automatically.set" value="true" />
+    <property name="GO_FMT" value="false" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -628,8 +169,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15729167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15729167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -653,6 +195,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="[Update] README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Update] README.md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -685,11 +231,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="102">
+          <caret line="6" column="34" lean-forward="true" selection-start-line="6" selection-start-column="34" selection-end-line="6" selection-end-column="34" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="221">
+            <caret line="13" column="48" lean-forward="false" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            <folding>
+              <marker date="1518364802887" expanded="true" signature="565:694" ph="..." />
+              <marker date="1518364802887" expanded="true" signature="708:1047" ph="{...}" />
+              <marker date="1518364802887" expanded="true" signature="708:1052" ph="{...}" />
+              <marker date="1518364802887" expanded="true" signature="900:923" ph="{...}" />
+              <marker date="1518364802887" expanded="true" signature="964:1046" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

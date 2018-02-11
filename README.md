@@ -11,7 +11,7 @@
 # How to Install :
 
 ```bash
-go get github.com/airking05/go-docker-api
+go get github.com/airking05/go-docker-api-client
 ```
 
 # How to Use :
